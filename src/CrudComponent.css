@@ -1,0 +1,100 @@
+.crud-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .crud-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .crud-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .crud-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .crud-submit {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  .crud-submit:hover {
+    background-color: #218838;
+  }
+  
+  .crud-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .crud-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .crud-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .crud-btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .crud-btn.edit {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .crud-btn.edit:hover {
+    background-color: #0056b3;
+  }
+  
+  .crud-btn.delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .crud-btn.delete:hover {
+    background-color: #c82333;
+  }
+  
