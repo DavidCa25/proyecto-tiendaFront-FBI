@@ -1,100 +1,130 @@
+/* Contenedor principal */
 .crud-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .crud-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .crud-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .crud-input {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .crud-submit {
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    align-self: center;
-    width: 100%;
-    max-width: 150px;
-  }
-  
-  .crud-submit:hover {
-    background-color: #218838;
-  }
-  
-  .crud-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .crud-list-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .crud-buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .crud-btn {
-    padding: 5px 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    border: none;
-    transition: 0.3s;
-  }
-  
-  .crud-btn.edit {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .crud-btn.edit:hover {
-    background-color: #0056b3;
-  }
-  
-  .crud-btn.delete {
-    background-color: #dc3545;
-    color: white;
-  }
-  
-  .crud-btn.delete:hover {
-    background-color: #c82333;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Título */
+.crud-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Tarjeta para el formulario */
+.crud-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Formulario */
+.crud-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grupo de campos */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.crud-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Botón de envío */
+.crud-submit {
+  padding: 0.7rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.crud-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Contenedor de la lista */
+.crud-list-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla de datos */
+.crud-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.crud-table th,
+.crud-table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.crud-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Botones de acciones */
+.crud-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.crud-btn.edit {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.crud-btn.edit:hover {
+  background-color: #218838;
+}
+
+.crud-btn.delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.crud-btn.delete:hover {
+  background-color: #c82333;
+}
+
+/* Indicador de carga */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: #777;
+}
